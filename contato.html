@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleContato.css">
+    <link rel="icon" href="fotos/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Serif+Oriya&family=Oxygen&display=swap"
+        rel="stylesheet">
+    <title>Catedral Metodista de Piracicaba</title>
+</head>
+
+<body>
+
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <img class="logo-img" src="fotos/logo.png" alt="Logo da Igreja">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="atividades.html">Atividades</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="localizacao.html">Localização</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    <div class="all">
+        <div class="container">
+            <div class="form-image">
+                <img src="fotos/faixadatemplo.jpeg">
+            </div>
+            <div class="form">
+                <form action="#">
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>CADASTRO</h1>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="input-box">
+                            <label for="firstname">Primeiro Nome</label>
+                            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome"
+                                required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="lastname">Sobrenome</label>
+                            <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome"
+                                required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="email">E-mail</label>
+                            <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="number">Telefone</label>
+                            <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx" required>
+                        </div>
+                    </div>
+                    <div class="member-inputs">
+                        <div class="member-title">
+                            <h6>Membro</h6>
+                        </div>
+                        <div class="member-group">
+                            <div class="member-input">
+                                <input type="radio" id="sim" name="membro">
+                                <label for="sim">Sim</label>
+                            </div>
+                            <div class="member-input">
+                                <input type="radio" id="nao" name="membro">
+                                <label for="nao">Não</label>
+                            </div>
+                            <div class="member-input">
+                                <input type="radio" id="none" name="membro">
+                                <label for="none">Gostaria de ser</label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="member-inputs">
+                            <div class="member-title">
+                                <h6>Para receber visitas, seria de sua preferência na</h6>
+                            </div>
+                            <div class="member-group">
+                                <div class="member-input">
+                                    <input type="checkbox" name="membro" id="csim">
+                                    <label for="csim">Parte da manhã</label>
+                                </div>
+                                <div class="member-input">
+                                    <input type="checkbox" name="membro" id="cnao">
+                                    <label for="cnao">Parte da tarde</label>
+                                </div>
+                                <div class="member-input">
+                                    <input type="checkbox" name="membro" id="cnoite">
+                                    <label for="cnoite">Parte da noite</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="go-button">
+                        <button><a href="#">Enviar</a></button>
+                        <input type="reset" value="Limpar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="texto-footer">
+        <div class="footer-content">
+            <ul class="utils">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="atividades.html">Atividades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="localizacao.html">Localização</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>
+                copyright &copy;2022 Catedral Metodista de Piracicaba. designed by <span>Tiago Reis Almeida</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

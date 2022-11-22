@@ -1,0 +1,342 @@
+/* GERAL */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* NAV BAR */
+nav {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+    padding: 0 5%;
+    height: 6.25rem;
+    width: 100%;
+}
+
+nav .links {
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .links a {
+    display: block;
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    border-radius: 1rem;
+}
+
+nav .links a:hover {
+    transition: .5s;
+    background-color: red;
+}
+
+#nav-toggle {
+    position: absolute;
+    top: -100px;
+}
+
+nav .icon-burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .icon-burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+/* FIM NAVBAR */
+
+/* LOGO */
+img.logo-img {
+    float: left;
+    padding-top: 1rem;
+    /*padding-bottom: 0.5rem;
+    margin-left: 7rem; */
+    width: 2.75rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+/* IMAGENS */
+
+img.imagem-texto {
+    margin-bottom: 0.8rem;
+    align-items: center;
+    max-width: 100rem;
+    max-height: 25rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+/* PARAGRAFOS */
+div.texto>p {
+    font-family: 'Oxygen', sans-serif;
+    color: black;
+    font-size: 18pt;
+    text-align: justify;
+    padding: 1.87rem;
+}
+
+div.texto>ul {
+    font-family: 'Oxygen', sans-serif;
+    color: black;
+    font-size: 18pt;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+ol>li {
+    padding: 1rem;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 28pt;
+    color: black;
+    padding-top: 1.56rem;
+    text-align: center;
+}
+
+.margem {
+    margin-right: 4.72rem;
+    margin-left: 4.72rem;
+}
+
+/* BANNER FIXO */
+.banner {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.616), rgba(4, 9, 30, 0.432)),
+        url(fotos/templo\ frontal.jpeg);
+    background-size: cover;
+    background-position: center;
+    top: 6.25rem;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
+.banner:after {
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: -1;
+}
+
+.banner h1 {
+    font-family: 'Noto Serif Oriya', serif;
+    padding-top: 13%;
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+}
+
+/* FIM DO BANNER */
+
+/* DIV TEXTOS */
+.texto {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: white;
+    top: 46.87rem;
+}
+
+/* CENTRALIZAR */
+.navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    margin-bottom: 10px;
+    width: 60rem;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    align-items: center;
+
+}
+
+/* FOOTER */
+.texto-footer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 46.87rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    height: auto;
+    width: 100px;
+    font-family: 'Oxygen', sans-serif;
+    padding-top: 10px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 5px auto;
+    font: 12pt;
+}
+
+.utils {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.utils li {
+    margin: 0 10px;
+}
+
+.utils a {
+    text-decoration: none;
+    color: white;
+}
+
+.utils a:hover {
+    color: red;
+}
+
+.copyright {
+    background: black;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.copyright span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/* ACABOU O FOOTER */
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 768px) {
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .margem {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .banner h1 {
+        opacity: 40%;
+        font-size: 3.5rem;
+    }
+
+    .logo-img {
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+
+    nav .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, .8);
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+
+    nav .links a {
+        font-size: 20px;
+        color: white;
+    }
+
+    nav :checked~.links {
+        bottom: 0;
+    }
+
+    nav .icon-burger {
+        display: block;
+    }
+
+    .navegacao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img.imagem-texto {
+        margin-bottom: 0.8rem;
+        align-items: center;
+        margin-bottom: 0.8rem;
+        max-width: 20rem;
+        max-height: 25rem;
+        width: max-content;
+        height: auto;
+        display: flex;
+    }
+
+}

@@ -1,0 +1,395 @@
+/* GERAL */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+
+body {
+    margin-top: 80px;
+    width: 100%;
+    background: white;
+}
+
+.all {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    margin-top: 10rem;
+    width: 80%;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 31rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #0000001c;
+}
+
+.input-box label, .member-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.member-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.member-input {
+    display: flex;
+    align-items: center;
+}
+
+.member-input input {
+    margin-right: 0.35rem;
+}
+
+.member-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+
+.go-button button, .go-button input {
+    width: 100%;
+    margin-top: 1.5rem;
+    border: none;
+    background-color: black;
+    padding: 0.42rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.go-button button:hover, .go-button input:hover {
+    width: 100%;
+    margin-top: 1.5rem;
+    border: none;
+    background-color: red;
+    transition: .5s;
+    padding: 0.42rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.go-button button a, .go-button input {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* NAV BAR */
+nav {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+    padding: 0 5%;
+    height: 6.25rem;
+    width: 100%;
+}
+
+nav .links {
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .links a {
+    display: block;
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    border-radius: 1rem;
+}
+
+nav .links a:hover {
+    transition: .5s;
+    background-color: red;
+}
+
+#nav-toggle {
+    position: absolute;
+    top: -100px;
+}
+
+nav .icon-burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .icon-burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+/* FIM NAVBAR */
+
+/* LOGO */
+img.logo-img {
+    float: left;
+    padding-top: 1rem;
+    /*padding-bottom: 0.5rem;
+    margin-left: 7rem; */
+    width: 2.75rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+/* FOOTER */
+.texto-footer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 25rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    height: auto;
+    width: 100px;
+    font-family: 'Oxygen', sans-serif;
+    padding-top: 10px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 5px auto;
+    font: 12pt;
+}
+
+.utils {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.utils li {
+    margin: 0 10px;
+}
+
+.utils a {
+    text-decoration: none;
+    color: white;
+}
+
+.utils a:hover {
+    color: red;
+}
+
+.copyright {
+    background: black;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.copyright span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/* ACABOU O FOOTER */
+
+@media screen and (max-width: 1330px) {
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .form-image {
+        display: none;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .form {
+        width: 100%;
+        margin-top: 8rem;
+    }
+
+    nav .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, .8);
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+
+    .member-inputs {
+        margin-top: 2rem;
+    }
+
+    nav .links a {
+        font-size: 20px;
+        color: white;
+    }
+
+    nav :checked~.links {
+        bottom: 0;
+    }
+
+    nav .icon-burger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+
+    .member-inputs {
+        margin-top: 2rem;
+    }
+
+    .member-group {
+        flex-direction: column;
+    }
+
+    .member-input {
+        margin-top: 0.5rem;
+    }
+}
