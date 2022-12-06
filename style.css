@@ -40,9 +40,10 @@ nav .links a {
     border-radius: 1rem;
 }
 
-nav .links a:hover {
+nav .links a:hover , a.ativo{
     transition: .5s;
     background-color: red;
+    color: white !important;
 }
 
 #nav-toggle {
