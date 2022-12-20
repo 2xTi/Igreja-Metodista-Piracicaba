@@ -9,6 +9,7 @@
     <link rel="icon" href="fotos/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Serif+Oriya&family=Oxygen&display=swap"
         rel="stylesheet">
@@ -16,7 +17,6 @@
 </head>
 
 <body>
-
     <nav>
         <input id="nav-toggle" type="checkbox">
         <img class="logo-img" src="fotos/logo.png" alt="Logo da Igreja">
@@ -37,8 +37,7 @@
             <div class="form-image">
                 <img src="fotos/faixadatemplo.jpeg">
             </div>
-            <div class="form">
-                <form action="#">
+            <form class="form" id="form">
                     <div class="form-header">
                         <div class="title">
                             <h1>CADASTRO</h1>
@@ -47,24 +46,22 @@
                     <div class="input">
                         <div class="input-box">
                             <label for="firstname">Primeiro Nome</label>
-                            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome"
-                                required>
+                            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome">
                         </div>
 
                         <div class="input-box">
                             <label for="lastname">Sobrenome</label>
-                            <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome"
-                                required>
+                            <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome">
                         </div>
 
                         <div class="input-box">
                             <label for="email">E-mail</label>
-                            <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                            <input id="email" type="email" name="email" placeholder="Digite seu email">
                         </div>
 
                         <div class="input-box">
                             <label for="number">Telefone</label>
-                            <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx" required>
+                            <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx">
                         </div>
                     </div>
                     <div class="member-inputs">
@@ -109,11 +106,9 @@
 
 
                     <div class="go-button">
-                        <button><a href="#">Enviar</a></button>
-                        <input type="reset" value="Limpar">
+                        <input type="submit" value="Verificar">
                     </div>
-                </form>
-            </div>
+            </form>
         </div>
     </div>
 
@@ -133,6 +128,8 @@
         </div>
     </footer>
 
+
+    <script src="script.js"></script>
 </body>
 
 </html>

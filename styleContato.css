@@ -25,12 +25,14 @@ body {
 .container {
     margin-top: 10rem;
     width: 80%;
+    height: 88%;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
 }
 
 .form-image {
     width: 50%;
+    height: 88%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,6 +110,16 @@ body {
     color: #000000be;
 }
 
+.input-box.success input{
+    border: 3px solid #4ECA64;
+}
+
+.input-box.error input{
+
+    border: 3px solid #DB5A5A;
+}
+
+
 .member-group {
     display: flex;
     justify-content: space-between;
@@ -117,11 +129,13 @@ body {
 
 .member-input {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
 }
 
-.member-input input {
-    margin-right: 0.35rem;
+.member-input input { 
+    margin-right: 1rem;
 }
 
 .member-input label {
@@ -136,19 +150,19 @@ body {
     margin-top: 1.5rem;
     border: none;
     background-color: black;
-    padding: 0.42rem;
+    padding: 1rem;
     border-radius: 5px;
     cursor: pointer;
     color: white;
+    
 }
-
 .go-button button:hover, .go-button input:hover {
     width: 100%;
     margin-top: 1.5rem;
     border: none;
     background-color: red;
     transition: .5s;
-    padding: 0.42rem;
+    padding: 1rem;
     border-radius: 5px;
     cursor: pointer;
 }
