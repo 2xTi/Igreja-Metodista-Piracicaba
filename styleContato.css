@@ -54,6 +54,16 @@ body {
     padding: 3rem;
 }
 
+.newform{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem;
+}
+
 .form-header {
     margin-bottom: 3rem;
     display: flex;
@@ -110,11 +120,11 @@ body {
     color: #000000be;
 }
 
-.input-box.success input{
+.input-box.success input {
     border: 3px solid #4ECA64;
 }
 
-.input-box.error input{
+.input-box.error input {
 
     border: 3px solid #DB5A5A;
 }
@@ -134,7 +144,7 @@ body {
     padding: 0 0.5rem;
 }
 
-.member-input input { 
+.member-input input {
     margin-right: 1rem;
 }
 
@@ -144,6 +154,13 @@ body {
     color: #000000c0;
 }
 
+.divisao {
+    display: none;
+    text-align: center;
+    background-color: blueviolet;
+    padding: 15px;
+    color: white;
+}
 
 .go-button button, .go-button input {
     width: 100%;
@@ -154,8 +171,9 @@ body {
     border-radius: 5px;
     cursor: pointer;
     color: white;
-    
+
 }
+
 .go-button button:hover, .go-button input:hover {
     width: 100%;
     margin-top: 1.5rem;
