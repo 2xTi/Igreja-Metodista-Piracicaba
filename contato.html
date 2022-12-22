@@ -9,7 +9,7 @@
     <link rel="icon" href="fotos/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Serif+Oriya&family=Oxygen&display=swap"
         rel="stylesheet">
@@ -37,77 +37,118 @@
             <div class="form-image">
                 <img src="fotos/faixadatemplo.jpeg">
             </div>
-            <form class="form" id="form">
-                    <div class="form-header">
-                        <div class="title">
-                            <h1>CADASTRO</h1>
+            <form action="index.html" class="form" id="form">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>CADASTRO</h1>
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome">
+                        <small class="form-small">Não pode ser vazio</small>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome">
+                        <small class="form-small">Não pode ser vazio</small>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="text" name="email" placeholder="Digite seu email">
+                        <small class="form-small">Preencha o email corretamente</small>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Telefone</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx">
+                        <small class="form-small">Preencha corretamente o telefone</small>
+                    </div>
+                </div>
+                <div class="member-inputs">
+                    <div class="member-title">
+                        <h6>Membro</h6>
+                        <h6>Opcional</h6>
+                    </div>
+                    <div class="member-group">
+                        <div class="member-input">
+                            <input type="radio" id="sim" name="membro">
+                            <label for="sim">Sim</label>
+                        </div>
+                        <div class="member-input">
+                            <input type="radio" id="nao" name="membro">
+                            <label for="nao">Não</label>
+                        </div>
+                        <div class="member-input">
+                            <input type="radio" id="none" name="membro">
+                            <label for="none">Gostaria de ser</label>
                         </div>
                     </div>
-                    <div class="input">
-                        <div class="input-box">
-                            <label for="firstname">Primeiro Nome</label>
-                            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome">
-                        </div>
-
-                        <div class="input-box">
-                            <label for="lastname">Sobrenome</label>
-                            <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome">
-                        </div>
-
-                        <div class="input-box">
-                            <label for="email">E-mail</label>
-                            <input id="email" type="email" name="email" placeholder="Digite seu email">
-                        </div>
-
-                        <div class="input-box">
-                            <label for="number">Telefone</label>
-                            <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx">
-                        </div>
-                    </div>
+                    <br>
                     <div class="member-inputs">
                         <div class="member-title">
-                            <h6>Membro</h6>
+                            <h6>Para receber visitas, seria de sua preferência na</h6>
+                            <h6>Opcional</h6>
                         </div>
                         <div class="member-group">
                             <div class="member-input">
-                                <input type="radio" id="sim" name="membro">
-                                <label for="sim">Sim</label>
+                                <input type="checkbox" name="membro" id="csim">
+                                <label for="csim">Parte da manhã</label>
                             </div>
                             <div class="member-input">
-                                <input type="radio" id="nao" name="membro">
-                                <label for="nao">Não</label>
+                                <input type="checkbox" name="membro" id="cnao">
+                                <label for="cnao">Parte da tarde</label>
                             </div>
                             <div class="member-input">
-                                <input type="radio" id="none" name="membro">
-                                <label for="none">Gostaria de ser</label>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="member-inputs">
-                            <div class="member-title">
-                                <h6>Para receber visitas, seria de sua preferência na</h6>
-                            </div>
-                            <div class="member-group">
-                                <div class="member-input">
-                                    <input type="checkbox" name="membro" id="csim">
-                                    <label for="csim">Parte da manhã</label>
-                                </div>
-                                <div class="member-input">
-                                    <input type="checkbox" name="membro" id="cnao">
-                                    <label for="cnao">Parte da tarde</label>
-                                </div>
-                                <div class="member-input">
-                                    <input type="checkbox" name="membro" id="cnoite">
-                                    <label for="cnoite">Parte da noite</label>
-                                </div>
+                                <input type="checkbox" name="membro" id="cnoite">
+                                <label for="cnoite">Parte da noite</label>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="go-button">
-                        <input type="submit" value="Verificar">
-                    </div>
+                <div class="go-button">
+                    <input class="hide" id="editar" type="button" value="Editar">
+                    <input class="hide" id="limpar" type="reset" name="Limpar" value="Limpar">
+                    <input class="hide" id="enviar" type="submit" value="Enviar">
+                    <button id="verificar">Verificar</button>
+                </div>
             </form>
+        </div>
+    </div>
+
+    <div id="allPrint" class="all hide">
+        <div class="container">
+            <div class="form-image">
+                <img src="fotos/faixadatemplo.jpeg">
+            </div>
+            <div class="form">
+                <div class="input">
+                    <div class="input-box">
+                        <h6>Nome</h6>
+                        <p id="fnome-js">
+                        </p>
+                    </div>
+                    <div class="input-box">
+                        <h6>Sobrenome</h6>
+                        <p id="lnome-js">
+                        </p>
+                    </div>
+                    <div class="input-box">
+                        <h6>Email</h6>
+                        <p id="email-js">
+                        </p>
+                    </div>
+                    <div class="input-box">
+                        <h6>Telefone</h6>
+                        <p id="number-js">
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

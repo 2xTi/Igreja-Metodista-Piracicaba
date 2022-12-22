@@ -54,6 +54,15 @@ body {
     padding: 3rem;
 }
 
+.form-small{
+    display: none;
+}
+
+.input-box.error small{
+    color: red;
+    display: block;
+}
+
 .newform{
     width: 50%;
     display: flex;
@@ -94,7 +103,7 @@ body {
     margin-bottom: 1.1rem;
 }
 
-.input-box input {
+.input-box input,  .input-box p{
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
     border: none;
@@ -125,7 +134,6 @@ body {
 }
 
 .input-box.error input {
-
     border: 3px solid #DB5A5A;
 }
 
@@ -154,21 +162,25 @@ body {
     color: #000000c0;
 }
 
-.divisao {
+.hide{
     display: none;
-    text-align: center;
-    background-color: blueviolet;
-    padding: 15px;
-    color: white;
+}
+
+.format{
+    margin: 3rem;
+    width: 50%;
+    padding: 3rem;
+    background-color: white;
+    padding: 3rem;
 }
 
 .go-button button, .go-button input {
     width: 100%;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     border: none;
     background-color: black;
-    padding: 1rem;
-    border-radius: 5px;
+    padding: 0.3rem;
+    border-radius: 3px;
     cursor: pointer;
     color: white;
 
@@ -176,19 +188,19 @@ body {
 
 .go-button button:hover, .go-button input:hover {
     width: 100%;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     border: none;
     background-color: red;
     transition: .5s;
-    padding: 1rem;
-    border-radius: 5px;
+    padding: 0.3rem;
+    border-radius: 3px;
     cursor: pointer;
 }
 
 .go-button button a, .go-button input {
     text-decoration: none;
-    font-size: 0.93rem;
-    font-weight: 500;
+    font-size: 0.73rem;
+    font-weight: 400;
     color: #fff;
 }
 
@@ -339,6 +351,11 @@ footer {
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
+}
+
+form input:read-only:not(input[type='checkbox'],input[type='radio'], input[type='submit'], input[type='reset'], input[type='button']){
+    cursor: not-allowed;
+
 }
 
 /* ACABOU O FOOTER */
