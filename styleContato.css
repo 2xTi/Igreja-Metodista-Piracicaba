@@ -373,12 +373,12 @@ form input:read-only:not(input[type='checkbox'],input[type='radio'], input[type=
     }
 
     .container {
-        width: 50%;
+        width: 40%;
     }
 
     .form {
         width: 100%;
-        margin-top: 10rem;
+        margin-top: 15rem;
     }
 
     nav .links {
@@ -398,7 +398,7 @@ form input:read-only:not(input[type='checkbox'],input[type='radio'], input[type=
     }
 
     .member-inputs {
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 
     nav .links a {
@@ -416,6 +416,15 @@ form input:read-only:not(input[type='checkbox'],input[type='radio'], input[type=
 }
 
 @media screen and (max-width: 1064px) {
+
+    form input:read-only:not(input[type='checkbox'],input[type='radio'], input[type='submit'], input[type='reset'], input[type='button']){
+        cursor: not-allowed;
+        
+    }   
+
+    #allPrint{
+        margin-top: 200px;
+    }
 
     .container {
         width: 90%;
@@ -439,6 +448,6 @@ form input:read-only:not(input[type='checkbox'],input[type='radio'], input[type=
     }
 
     .member-input {
-        margin-top: 0.5rem;
+        margin-top: 1rem;
     }
 }
