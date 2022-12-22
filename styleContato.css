@@ -378,7 +378,7 @@ form input:read-only:not(input[type='checkbox'],input[type='radio'], input[type=
 
     .form {
         width: 100%;
-        margin-top: 8rem;
+        margin-top: 10rem;
     }
 
     nav .links {
