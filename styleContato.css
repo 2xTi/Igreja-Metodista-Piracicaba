@@ -8,6 +8,12 @@
     font-family: 'Oxygen', sans-serif;
 }
 
+nav .links a:hover , a.ativo{
+    transition: .5s;
+    background-color: red;
+    color: white !important;
+}
+
 body {
     margin-top: 80px;
     width: 100%;
