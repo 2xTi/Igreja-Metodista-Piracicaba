@@ -12,9 +12,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Serif+Oriya&family=Oxygen&display=swap"
         rel="stylesheet">
+        <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="animate.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <title>Catedral Metodista de Piracicaba</title>
 </head>
 
@@ -36,7 +42,7 @@
         </label>
     </nav>
 
-    <div class="banner" style="background-image: linear-gradient(rgba(4, 9, 30, 0.616), rgba(4, 9, 30, 0.432)),
+    <div class="banner-imagem" style="background-image: linear-gradient(rgba(4, 9, 30, 0.616), rgba(4, 9, 30, 0.432)),
     url(fotos/trinity.jpeg);">
         <h1 id="welcome_msg">
             Atividades da Catedral Metodista de Piracicaba
@@ -46,13 +52,14 @@
     <div class="texto">
         <h2>Nossas Atividades</h2>
         <p class="margem">
-        <ul>
-            <li><strong>Cultos:</strong>
-                <ol>
-                    <li>Culto matutino aos domingos, às 9h na igreja.</li>
-                </ol>
-            </li>
-        </ul>
+            <ul>
+                <li><strong>Cultos:</strong>
+                    <ol>
+                        <li>Culto matutino aos domingos, às 9h na igreja</li>
+                    </ol>
+                </li>
+            </ul>
+            
         <ul>
             <li><strong>Escola Dominical:</strong>
                 <ol>
@@ -75,8 +82,46 @@
                 </ol>
             </li>
         </ul>
-        </p>
+        </p>       
 
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+          
+            <div class="carousel-inner carouselformat">
+              <div class="item active">
+                <img class="formatadoimg cover" src="fotos/reuniaolares.jpeg" alt="Imagem 1">
+                <div class="carousel-caption">
+                </div>
+              </div>
+          
+              <div class="item">
+                <img class="formatadoimg cover" src="fotos/fotosjuntas.jpg" alt="Imagem 2">
+                <div class="carousel-caption">
+                </div>
+              </div>
+          
+              <div class="item">
+                <img class="formatadoimg cover" src="fotos/bolosmm.jpeg" alt="Imagem 3">
+                <div class="carousel-caption">
+                </div>
+              </div>
+            </div>
+          
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+          
+        <br>
         <h2>
             Sobre educação cristã e a Escola Dominical
         </h2>
@@ -87,15 +132,6 @@
         <div class="navegacao">
             <img class="imagem-texto" src="fotos/classealternativa.jpeg">
         </div>
-        <!-- <div class="navegacao">
-            <img class="imagem-texto" src="fotos/classeesperanca.jpeg">
-        </div>
-        <div class="navegacao">
-            <img class="imagem-texto" src="fotos/estudogeral.jpeg">
-        </div>
-        <div class="navegacao">
-            <img class="imagem-texto" src="fotos/classecriancas.jpeg">
-        </div> -->
         <h2>Coral</h2>
         <p class="margem">
             O coro Reverendo James William Koger recebeu esse nome em 1930, em homenagem ao primeiro pastor da igreja,
