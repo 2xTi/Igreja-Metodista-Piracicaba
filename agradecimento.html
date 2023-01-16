@@ -8,12 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="fotos/logo.png">
-    <style>
-        body{
-            height:100vh;
-        }
-    </style>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="badge.js"></script>
     <title>Agradecimento</title>
 </head>
 
@@ -65,6 +61,12 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="d-flex justify-content-center">
+                <span class="badge badge-primary m-2" id="badge-counter">0</span>
+                <button class="btn btn-primary" onclick="incrementCounter()">Amém</button>
+                <button class="btn btn-danger" onclick="resetCounter()">Restaurar</button>
+            </div>            
             
         <footer class="texto-footer">
             <div class="footer-content">

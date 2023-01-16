@@ -104,14 +104,12 @@ function checkInputs() {
    }
 }
 
-
 function errorValidation(input) {
 
    const inputBox = input.parentElement;
 
    inputBox.className = 'input-box error'
 }
-
 
 function successValidation(input) {
 
