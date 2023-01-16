@@ -8,7 +8,6 @@
     font-family: 'Oxygen', sans-serif;
 }
 
-
 body {
     margin-top: 80px;
     width: 100%;
@@ -16,6 +15,7 @@ body {
 }
 
 .all {
+    padding: 0;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -26,14 +26,14 @@ body {
 .container {
     margin-top: 10rem;
     width: 80%;
-    height: 88%;
+    height: 98%;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
 }
 
 .form-image {
     width: 50%;
-    height: 88%;
+    height: 98%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,7 @@ body {
 }
 
 .form {
-    width: 50%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,6 +205,10 @@ body {
     color: #fff;
 }
 
+/* JANELA MODAL */
+
+/* FIM JANELA MODAL */
+
 /* NAV BAR */
 nav {
     position: fixed;
@@ -231,7 +235,7 @@ nav .links {
 
 nav .links a {
     display: block;
-    padding: 1em;
+    padding: 1rem;
     font-size: 1rem;
     font-weight: bold;
     color: black;
@@ -295,7 +299,7 @@ footer {
     right: 0;
     background: black;
     height: auto;
-    width: 100px;
+    width: 100%;
     font-family: 'Oxygen', sans-serif;
     padding-top: 10px;
     color: white;
@@ -425,7 +429,7 @@ form input:read-only:not(input[type='checkbox'],input[type='radio'], input[type=
     }   
 
     #allPrint{
-        margin-top: 200px;
+        margin-top: 22rem;
     }
 
     .container {

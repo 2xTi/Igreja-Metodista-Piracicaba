@@ -13,6 +13,8 @@ const checkN = document.getElementById('cnao');
 const checkNoite = document.getElementById('cnoite');
 const editar = document.getElementById('editar');
 const verifica = document.getElementById('verificar');
+const enviar = document.getElementById('enviar');
+
 
 function validateEmail(email) {
    var re = /\S+@\S+\.\S+/;
@@ -67,6 +69,7 @@ function checkInputs() {
       document.getElementById('limpar').classList.remove('hide')
       document.getElementById('enviar').classList.remove('hide')
       document.getElementById('verificar').classList.add('hide')
+      document.getElementById('open-modal-btn').classList.add('hide')
 
       firstname.readOnly = true
       lastname.readOnly = true
@@ -95,8 +98,9 @@ function checkInputs() {
          document.getElementById('limpar').classList.add('hide')
          document.getElementById('enviar').classList.add('hide')
          document.getElementById('verificar').classList.remove('hide')
-      });
+         document.getElementById('open-modal-btn').classList.remove('hide')
 
+      });
    }
 }
 
@@ -114,4 +118,3 @@ function successValidation(input) {
    const formControl = input.parentElement;
    formControl.className = 'input-box success'
 }
-
