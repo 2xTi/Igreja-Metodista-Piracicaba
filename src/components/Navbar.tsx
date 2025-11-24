@@ -36,7 +36,7 @@ export default function Navbar() {
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <Link href="/" className="flex items-center gap-2">
                     {/* Assuming logo.png is in public/fotos/logo.png */}
-                    <Image src="/fotos/logo.png" alt="Logo" width={40} height={40} className="h-10 w-auto" />
+                    <Image src={`${process.env.NODE_ENV === 'production' ? '/Igreja-Metodista-Piracicaba' : ''}/fotos/logo.png`} alt="Logo" width={40} height={40} className="h-10 w-auto" />
                     <span className={cn("font-serif text-lg font-bold", scrolled ? "text-stone-900" : "text-white")}>
                         Catedral Metodista
                     </span>
