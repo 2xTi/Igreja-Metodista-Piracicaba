@@ -21,7 +21,7 @@ export default function Hero() {
             >
                 <div
                     className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: `url('${process.env.NODE_ENV === 'production' ? '/Igreja-Metodista-Piracicaba' : ''}/fotos/catedralfimdetarde.jpeg')` }}
+                    style={{ backgroundImage: "url('/fotos/catedralfimdetarde.jpeg')" }}
                 />
                 <div className="absolute inset-0 bg-black/40" />
             </motion.div>

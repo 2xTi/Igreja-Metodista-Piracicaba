@@ -36,7 +36,7 @@ export default function About() {
                         className="relative h-[400px] rounded-lg overflow-hidden shadow-xl"
                     >
                         <Image
-                            src={`${process.env.NODE_ENV === 'production' ? '/Igreja-Metodista-Piracicaba' : ''}/fotos/casa alugada.jpeg`}
+                            src="/fotos/casa alugada.jpeg"
                             alt="Primeira casa alugada"
                             fill
                             className="object-cover"
@@ -54,7 +54,7 @@ export default function About() {
                         className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-2 md:order-1"
                     >
                         <Image
-                            src={`${process.env.NODE_ENV === 'production' ? '/Igreja-Metodista-Piracicaba' : ''}/fotos/contrucao.jpeg`}
+                            src="/fotos/contrucao.jpeg"
                             alt="Construção do templo"
                             fill
                             className="object-cover"
