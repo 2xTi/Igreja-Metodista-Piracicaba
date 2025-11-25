@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className="scroll-smooth">
-      <body className={`${inter.variable} ${lora.variable} font-sans antialiased bg-stone-50 text-stone-900`}>
+      <body className={`${inter.variable} ${lora.variable} font-sans antialiased bg-stone-50 text-stone-900 overflow-x-hidden`}>
         {children}
       </body>
     </html>

@@ -11,6 +11,7 @@ const navLinks = [
     { name: "Home", href: "#home" },
     { name: "Nossa História", href: "#about" },
     { name: "Atividades", href: "#services" },
+    { name: "Restauro", href: "#restoration" },
     { name: "Localização", href: "#location" },
 ];
 
@@ -26,6 +27,18 @@ export default function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    // Prevent body scroll when mobile menu is open
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "unset";
+        }
+        return () => {
+            document.body.style.overflow = "unset";
+        };
+    }, [isOpen]);
+
     return (
         <nav
             className={cn(
@@ -34,10 +47,10 @@ export default function Navbar() {
             )}
         >
             <div className="container mx-auto px-4 flex justify-between items-center">
-                <Link href="/" className="flex items-center gap-2">
+                <Link href="/" className="flex items-center gap-2 z-50 relative">
                     {/* Assuming logo.png is in public/fotos/logo.png */}
                     <Image src="/fotos/logo.png" alt="Logo" width={40} height={40} className="h-10 w-auto" />
-                    <span className={cn("font-serif text-lg font-bold", scrolled ? "text-stone-900" : "text-white")}>
+                    <span className={cn("font-serif text-lg font-bold", scrolled || isOpen ? "text-stone-900" : "text-white")}>
                         Catedral Metodista
                     </span>
                 </Link>
@@ -60,12 +73,13 @@ export default function Navbar() {
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden p-2"
+                    className="md:hidden p-2 z-50 relative"
                     onClick={() => setIsOpen(!isOpen)}
                     aria-label="Toggle menu"
+                    aria-expanded={isOpen}
                 >
                     {isOpen ? (
-                        <X className={cn("h-6 w-6", scrolled ? "text-stone-900" : "text-white")} />
+                        <X className="h-6 w-6 text-stone-900" />
                     ) : (
                         <Menu className={cn("h-6 w-6", scrolled ? "text-stone-900" : "text-white")} />
                     )}
@@ -76,17 +90,17 @@ export default function Navbar() {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        className="absolute top-full left-0 w-full bg-white shadow-lg md:hidden"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 bg-white z-40 md:hidden flex flex-col justify-center items-center"
                     >
-                        <div className="flex flex-col p-4 gap-4">
+                        <div className="flex flex-col gap-8 text-center">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className="text-stone-700 font-medium hover:text-amber-600 py-2 border-b border-stone-100 last:border-0"
+                                    className="text-2xl font-serif font-bold text-stone-800 hover:text-amber-600 transition-colors"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {link.name}
