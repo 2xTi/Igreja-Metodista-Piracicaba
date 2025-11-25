@@ -32,24 +32,24 @@ const services = [
 
 export default function Services() {
     return (
-        <section id="services" className="py-20 bg-white">
+        <section id="services" className="py-12 md:py-20 bg-white">
             <div className="container mx-auto px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="text-center mb-16"
+                    className="text-center mb-10 md:mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-stone-900 mb-4">
+                    <h2 className="text-2xl md:text-4xl font-serif font-bold text-stone-900 mb-4">
                         Nossas Atividades
                     </h2>
-                    <p className="text-stone-600 max-w-2xl mx-auto">
+                    <p className="text-stone-600 max-w-2xl mx-auto text-base md:text-lg">
                         Participe de nossos encontros semanais e fortaleça sua fé em comunhão.
                     </p>
                 </motion.div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                     {services.map((service, index) => (
                         <motion.div
                             key={service.title}
@@ -57,16 +57,16 @@ export default function Services() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="bg-stone-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-stone-100"
+                            className="bg-stone-50 p-6 md:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-stone-100"
                         >
-                            <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mb-6 text-amber-700">
-                                <service.icon size={24} />
+                            <div className="w-10 h-10 md:w-12 md:h-12 bg-amber-100 rounded-full flex items-center justify-center mb-4 md:mb-6 text-amber-700">
+                                <service.icon size={20} className="md:w-6 md:h-6" />
                             </div>
-                            <h3 className="text-xl font-bold text-stone-900 mb-3">{service.title}</h3>
-                            <p className="text-stone-600 mb-4 text-sm">{service.description}</p>
+                            <h3 className="text-lg md:text-xl font-bold text-stone-900 mb-2 md:mb-3">{service.title}</h3>
+                            <p className="text-stone-600 mb-3 md:mb-4 text-sm">{service.description}</p>
                             <ul className="space-y-2">
                                 {service.items.map((item, i) => (
-                                    <li key={i} className="text-stone-800 font-medium text-sm border-l-2 border-amber-500 pl-3">
+                                    <li key={i} className="text-stone-800 font-medium text-xs md:text-sm border-l-2 border-amber-500 pl-3">
                                         {item}
                                     </li>
                                 ))}
