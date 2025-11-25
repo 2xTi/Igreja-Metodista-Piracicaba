@@ -5,7 +5,7 @@ import { Calendar, CreditCard, FileText, Landmark, Calculator, Send } from "luci
 
 export default function Restoration() {
     return (
-        <section id="restoration" className="py-12 md:py-20 bg-stone-100">
+        <section id="restoration" className="py-12 md:py-20 bg-stone-100 overflow-hidden">
             <div className="container mx-auto px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

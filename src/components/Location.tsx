@@ -5,7 +5,7 @@ import { MapPin, Clock } from "lucide-react";
 
 export default function Location() {
     return (
-        <section id="location" className="py-12 md:py-20 bg-stone-900 text-white">
+        <section id="location" className="py-12 md:py-20 bg-stone-900 text-white overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                     <motion.div

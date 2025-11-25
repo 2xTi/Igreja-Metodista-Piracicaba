@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <section id="about" className="py-12 md:py-20 bg-stone-50">
+        <section id="about" className="py-12 md:py-20 bg-stone-50 overflow-hidden">
             <div className="container mx-auto px-4">
                 {/* History Section */}
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-20">
